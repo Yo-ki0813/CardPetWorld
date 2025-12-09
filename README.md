@@ -18,17 +18,22 @@ CardPetWorld is a modular Python-based game prototype that allows players to sca
 
 ## 🚀 Quick Start
 
-### 1️⃣ Install Dependencies
+### 1. Inventory System
 
 ```bash
+# 进入项目目录
 cd CardPetWorld
-pip install -r requirements.txt
 
-### 2. Launch the Game
+# 安装依赖
+pip install -r requirements.txt
+```
+
+### 2. play
 
 ```bash
 python main.py
 ```
+
 ### 3. Controls
 
 - **↑↓** - Menu navigation
