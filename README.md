@@ -46,7 +46,10 @@ CardPetWorld/
 ├─ game_world/        # Adventure gameplay
 ├─ inventory/         # Item & pet storage system
 ├─ screens/           # UI screens & state transitions
-├─ web_ar/           
+├─ web_ar/            # Web 3D viewer (Three.js demo)
+├─ assets/            # Images, models, config files
+├─ requirements.txt   # Dependencies
+└─ main.py            # Entry point    
 ---
 
 ### 🚧 Current Status (Prototype)
