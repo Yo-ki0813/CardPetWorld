@@ -1,3 +1,85 @@
+# CardPetWorld 🃏🐾 — AI-Generated Virtual Pet Crafting Game
+
+CardPetWorld is a modular Python-based prototype game system that allows players to scan real trading cards or objects using YOLO-based object detection. The scanned item is converted into a virtual pet, which can then explore, battle, and evolve inside the game world. The collected items and pets can be exported as 3D printable models (OBJ/STL).
+
+---
+
+### ✨ Key Features
+
+- 📷 **Card Scanning**
+  Detect physical trading cards using the camera and YOLO to generate in-game pets.
+
+- 🐾 **Virtual Pets**
+  Each scanned card becomes a unique pet with rarity, skills, and attributes.
+
+- 🎮 **Adventure Mode**
+  Explore a pixel-style world, battle enemies, gain resources, and unlock upgrades.
+
+- 📦 **Inventory System**
+  Store scanned pets and scored items and manage crafting materials.
+
+- 🛠 **Crafting & Fusion**
+  Combine resources or pet fragments to create new pets or rare items.
+
+- 🧱 **3D Export**
+  Export collected items and pets as OBJ/STL files for 3D printing or AR viewing.
+
+---
+
+### 🧪 Technology Stack
+
+| Component | Technology |
+|----------|------------|
+| Game engine | Python + Pygame |
+| AI recognition | YOLO object detection |
+| UI & state design | Modular game states with screen manager |
+| 3D model handling | OBJ/STL export + external viewer |
+| AR / Web demo | HTML + Three.js viewer |
+
+---
+
+### 📁 Project Structure
+CardPetWorld
+│
+├─ core/              # core game logic
+├─ detection/         # YOLO recognition
+├─ game_world/        # adventure mode
+├─ inventory/         # pet and item storage system
+├─ screens/           # UI screens and state transitions
+├─ web_ar/            # web 3D viewer demo (HTML/JS)
+└─ main.py            # entry point
+---
+
+### 🚧 Current Status (Prototype)
+
+✔ Working features:
+
+- Card scanning prototype  
+- Inventory system  
+- Adventure movement  
+- Basic 3D export and viewer  
+- UI navigation and game state handling  
+
+🚀 Next steps:
+
+- Add animations & sound design  
+- Improve AR integration  
+- Polish gameplay, balance stats  
+
+---
+
+### 📜 License
+
+This project is for academic and experimental use only.  
+Commercial use requires permission.
+
+---
+
+### 👩‍💻 Author
+
+> Qi Yang — Kwansei Gakuin University  
+> Research Topic: *Game systems using AI recognition and mixed reality content generation.*
+> 
 # 🎴 CardPetWorld - 卡片宠物世界
 
 > 扫描卡片，召唤宠物，开启冒险！
