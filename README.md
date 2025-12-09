@@ -39,15 +39,14 @@ CardPetWorld is a modular Python-based prototype game system that allows players
 ---
 
 ### 📁 Project Structure
-CardPetWorld
+CardPetWorld/
 │
-├─ core/              # core game logic
-├─ detection/         # YOLO recognition
-├─ game_world/        # adventure mode
-├─ inventory/         # pet and item storage system
-├─ screens/           # UI screens and state transitions
-├─ web_ar/            # web 3D viewer demo (HTML/JS)
-└─ main.py            # entry point
+├─ core/              # Core game logic
+├─ detection/         # YOLO object detection
+├─ game_world/        # Adventure gameplay
+├─ inventory/         # Item & pet storage system
+├─ screens/           # UI screens & state transitions
+├─ web_ar/           
 ---
 
 ### 🚧 Current Status (Prototype)
