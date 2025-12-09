@@ -1,8 +1,40 @@
-## 2️⃣ Prototype Gameplay (Player Experience & Core Loop)
+# 🎴 CardPetWorld
 
-**CardPetWorld** is an early-stage playable prototype demonstrating the core idea of a **scan-to-collect virtual pet ecosystem**.  
-Players interact with physical or digital cards, which are recognized using **YOLO object detection**. Each scanned card unlocks a pet, material, or item that can be stored, crafted, or viewed in 3D.
+> Scan cards. Summon pets. Begin your adventure.
 
+CardPetWorld is a modular Python-based game prototype that allows players to scan real or digital cards using a camera and YOLO object detection to generate virtual pets. These pets can exist as interactive desktop companions, appear in a pixel-style adventure world, collect items, battle enemies, and export collected objects as **3D-printable models**.
+
+---
+
+## ✨ Features
+
+- 📷 **Card Scanning** — Identify cards using a webcam + YOLO detection  
+- 🖥️ **Desktop Pet Mode** — Pets roam freely on the desktop  
+- 🎮 **Adventure World** — Pixel-style exploration with movement and interaction  
+- 🎒 **Inventory System** — Collect, store, and manage items and pets  
+- 🏭 **3D Export** — Export objects as `.OBJ` or `.STL` for 3D printing or AR viewing  
+
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Install Dependencies
+
+```bash
+cd CardPetWorld
+pip install -r requirements.txt
+
+### 2. Launch the Game
+
+```bash
+python main.py
+```
+### 3. Controls
+
+- **↑↓** - Menu navigation
+- **Enter/Space** - Select / Confirm
+- **ESC** - Back / Exit
+- **Mouse click** - UI interaction
 ---
 
 ### 🎮 Core Player Loop
@@ -72,6 +104,109 @@ Players continuously repeat this loop to expand their collection and progress th
 | Personalization | Planned AI-generated assets |
 
 ---
+📁 Project Structure
+CardPetWorld/
+├── main.py                # Application entry
+├── requirements.txt       # Dependency list
+├── config.yaml            # Global configuration
+├── README.md              # Documentation
+│
+├── core/                  # Core engine systems
+│   ├── event_bus.py
+│   ├── state_manager.py
+│   ├── resource_loader.py
+│   └── game_engine.py
+│
+├── detection/             # YOLO card scanning pipeline
+│   ├── camera.py
+│   ├── detector.py
+│   └── card_mapper.py
+│
+├── pet/                   # Virtual pet logic
+│   ├── character.py
+│   ├── stats.py
+│   ├── animation.py
+│   ├── behavior.py
+│   └── pet_factory.py
+│
+├── desktop/               # Desktop pet interaction
+│   ├── transparent_window.py
+│   ├── desktop_pet.py
+│   └── tray_menu.py
+│
+├── game_world/            # Adventure gameplay
+│   ├── world.py
+│   ├── tilemap.py
+│   ├── player_controller.py
+│   ├── enemy.py
+│   ├── combat.py
+│   └── collectible.py
+│
+├── inventory/             # Item storage and crafting
+│   ├── item.py
+│   ├── inventory.py
+│   ├── crafting.py
+│   └── item_database.py
+│
+├── export_3d/             # 3D model utilities
+│   ├── mesh_generator.py
+│   ├── voxelizer.py
+│   ├── obj_exporter.py
+│   └── stl_exporter.py
+│
+├── ui/                    # User interface
+│   ├── menu.py
+│   ├── hud.py
+│   └── inventory_ui.py
+│
+├── data/                  # JSON datasets
+│   ├── pets.json
+│   ├── items.json
+│   ├── recipes.json
+│   ├── enemies.json
+│   └── maps/
+│
+├── assets/                # Game assets
+│   ├── sprites/
+│   ├── sounds/
+│   └── fonts/
+│
+└── tests/                 # Unit tests
+
+## 🛠️ Dependencies
+
+### Required
+- **pygame** >= 2.5.0 - UI and game engine
+
+### Optional (Enhances Features)
+- **opencv-python** >= 4.8.0 - Camera + image processing
+- **ultralytics** >= 8.0.0 - YOLO detection
+- **PyQt6** >= 6.5.0 - Desktop pet transparent window
+- **numpy** >= 1.24.0 - Computation
+
+## 📋 Development Progress
+
+- [x] Phase 1: Project scaffolding
+- [x] Phase 2: Menu + runnable app
+- [ ] Phase 3: Card scanning system
+- [ ] Phase 4: Desktop pet behavior
+- [ ] Phase 5: Adventure world
+- [ ] Phase 6: Crafting & inventory
+- [ ] Phase 7: 3D export pipeline
+
+## 🎮 Current Prototype Status
+
+**The project is currently in Phase 2 — the application runs and includes:
+
+- ✅ Functional Pygame menu
+- ✅ Keyboard and mouse navigation
+- ✅ Modular structure prepared for expansion
+- ✅ Clear scripted screens
+- ✅ Placeholder gameplay systems
+
+## 📝 License
+
+MIT License
 
 ### ⭐ Summary
 
@@ -232,9 +367,16 @@ CardPetWorld/
 
 MIT License
 
-## 🤝 贡献
+### ⭐ Summary
 
-欢迎提交 Issue 和 Pull Request！
+This prototype validates the feasibility of a hybrid **physical-to-digital pet ecosystem** using:
+
+- Computer vision (YOLO)
+- Modular game states
+- Inventory and crafting mechanics
+- 3D export and visualization technology
+
+While not a finalized game, it successfully demonstrates the **core mechanics**, technical stack, and potential player experience of CardPetWorld.
 
 ---
 
