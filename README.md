@@ -39,6 +39,7 @@ CardPetWorld is a modular Python-based prototype game system that allows players
 ---
 
 ### 📁 Project Structure
+```
 CardPetWorld/
 │
 ├─ core/              # Core game logic
@@ -50,6 +51,7 @@ CardPetWorld/
 ├─ assets/            # Images, models, config files
 ├─ requirements.txt   # Dependencies
 └─ main.py            # Entry point    
+```
 ---
 
 ### 🚧 Current Status (Prototype)
