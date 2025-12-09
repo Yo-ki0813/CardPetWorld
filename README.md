@@ -104,6 +104,7 @@ Players continuously repeat this loop to expand their collection and progress th
 | Personalization | Planned AI-generated assets |
 
 ---
+```
 📁 Project Structure
 CardPetWorld/
 ├── main.py                # Application entry
@@ -183,6 +184,7 @@ CardPetWorld/
 - **ultralytics** >= 8.0.0 - YOLO detection
 - **PyQt6** >= 6.5.0 - Desktop pet transparent window
 - **numpy** >= 1.24.0 - Computation
+```
 
 ## 📋 Development Progress
 
