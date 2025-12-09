@@ -1,89 +1,91 @@
-# CardPetWorld 🃏🐾 — AI-Generated Virtual Pet Crafting Game
+## 2️⃣ Prototype Gameplay (Player Experience & Core Loop)
 
-CardPetWorld is a modular Python-based prototype game system that allows players to scan real trading cards or objects using YOLO-based object detection. The scanned item is converted into a virtual pet, which can then explore, battle, and evolve inside the game world. The collected items and pets can be exported as 3D printable models (OBJ/STL).
-
----
-
-### ✨ Key Features
-
-- 📷 **Card Scanning**
-  Detect physical trading cards using the camera and YOLO to generate in-game pets.
-
-- 🐾 **Virtual Pets**
-  Each scanned card becomes a unique pet with rarity, skills, and attributes.
-
-- 🎮 **Adventure Mode**
-  Explore a pixel-style world, battle enemies, gain resources, and unlock upgrades.
-
-- 📦 **Inventory System**
-  Store scanned pets and scored items and manage crafting materials.
-
-- 🛠 **Crafting & Fusion**
-  Combine resources or pet fragments to create new pets or rare items.
-
-- 🧱 **3D Export**
-  Export collected items and pets as OBJ/STL files for 3D printing or AR viewing.
+**CardPetWorld** is an early-stage playable prototype demonstrating the core idea of a **scan-to-collect virtual pet ecosystem**.  
+Players interact with physical or digital cards, which are recognized using **YOLO object detection**. Each scanned card unlocks a pet, material, or item that can be stored, crafted, or viewed in 3D.
 
 ---
 
-### 🧪 Technology Stack
-
-| Component | Technology |
-|----------|------------|
-| Game engine | Python + Pygame |
-| AI recognition | YOLO object detection |
-| UI & state design | Modular game states with screen manager |
-| 3D model handling | OBJ/STL export + external viewer |
-| AR / Web demo | HTML + Three.js viewer |
+### 🎮 Core Player Loop
+Scan → Unlock → Collect → Craft → View in 3D → Explore → Repeat
+Players continuously repeat this loop to expand their collection and progress through the game.
 
 ---
 
-### 📁 Project Structure
-```
-CardPetWorld/
-│
-├─ core/              # Core game logic
-├─ detection/         # YOLO object detection
-├─ game_world/        # Adventure gameplay
-├─ inventory/         # Item & pet storage system
-├─ screens/           # UI screens & state transitions
-├─ web_ar/            # Web 3D viewer (Three.js demo)
-├─ assets/            # Images, models, config files
-├─ requirements.txt   # Dependencies
-└─ main.py            # Entry point    
-```
----
+### 🔍 1) Card Scanning System
 
-### 🚧 Current Status (Prototype)
+- Uses the camera and YOLO detection to identify cards  
+- Supports both printed and digital images  
+- Unlocks and saves the detected object to the player’s inventory  
+- Planned feature: reward animation for first-time detections
 
-✔ Working features:
-
-- Card scanning prototype  
-- Inventory system  
-- Adventure movement  
-- Basic 3D export and viewer  
-- UI navigation and game state handling  
-
-🚀 Next steps:
-
-- Add animations & sound design  
-- Improve AR integration  
-- Polish gameplay, balance stats  
+**Purpose:** Turn real-world card interaction into game progression.
 
 ---
 
-### 📜 License
+### 📦 2) Inventory System
 
-This project is for academic and experimental use only.  
-Commercial use requires permission.
+- Stores all scanned pets, resources, and items  
+- Each entry includes metadata such as rarity, category, and placeholder stats  
+- UI designed to support future sorting and filtering
+
+**Purpose:** Provide long-term ownership and record player progression.
 
 ---
 
-### 👩‍💻 Author
+### 🔧 3) Crafting System (Prototype)
 
-> Qi Yang — Kwansei Gakuin University  
-> Research Topic: *Game systems using AI recognition and mixed reality content generation.*
-> 
+- Players can combine multiple collected materials to create new items or pets  
+- Current logic uses placeholder rules  
+- Future direction: rule-based recipes or AI-generated crafting outputs
+
+**Purpose:** Encourage experimentation and provide progression mechanics.
+
+---
+
+### 🌍 4) Adventure Mode (Exploration Concept)
+
+- Simple movement controls within a placeholder 2D world  
+- Intended future features: NPCs, battles, resource gathering, environments
+
+**Purpose:** Expand gameplay beyond scanning and collecting.
+
+---
+
+### 🧊 5) 3D Viewer + Export
+
+- Collected or crafted assets can be exported as `.OBJ` or `.STL`  
+- Includes a browser-based **Three.js 3D viewer** for rotation and zoom  
+- Future goal: integrate AR preview mode for mobile devices
+
+**Purpose:** Bridge in-game assets with real-world fabrication (e.g., 3D printing or AR display).
+
+---
+
+### 👤 Target User Experience
+
+| Player Motivation | Prototype Support |
+|------------------|------------------|
+| Collection | Scan-to-unlock system |
+| Progression | Inventory + crafting |
+| Ownership | Exportable 3D models |
+| Exploration | Early adventure mode |
+| Personalization | Planned AI-generated assets |
+
+---
+
+### ⭐ Summary
+
+This prototype validates the feasibility of a hybrid **physical-to-digital pet ecosystem** using:
+
+- Computer vision (YOLO)
+- Modular game states
+- Inventory and crafting mechanics
+- 3D export and visualization technology
+
+While not a finalized game, it successfully demonstrates the **core mechanics**, technical stack, and potential player experience of CardPetWorld.
+
+---
+
 # 🎴 CardPetWorld - 卡片宠物世界
 
 > 扫描卡片，召唤宠物，开启冒险！
